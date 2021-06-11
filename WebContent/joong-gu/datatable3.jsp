@@ -1,6 +1,6 @@
 <%@page import="culture.CultureDto2"%>
+<%@page import="culture.CultureDao2"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import ="culture.CultureDao2"%>
 
 <%@ page pageEncoding="utf-8"%>
 <%@ include file="../inc/header2.jsp"%>
