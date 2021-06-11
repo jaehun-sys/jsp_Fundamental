@@ -13,10 +13,10 @@
 
     <title>중구의 문화재</title>
     <style>
-		
+      
 </style>
-  	</head>
-  	<body>
+     </head>
+     <body>
      <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color : #7952b3">
 
@@ -43,16 +43,16 @@
              위치 기반 추천
            </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          	<a class="dropdown-item" href="r_pathA.jsp">코스A</a>
-          	<a class="dropdown-item" href="pathB.jsp">코스B</a>
-          	<a class="dropdown-item" href="pathC.jsp">코스C</a>
-          	<a class="dropdown-item" href="pathD.jsp">코스D</a>
-          	<a class="dropdown-item" href="path.jsp">보자보자모두보자</a>
-          	<!--
-          	<div class="dropdown-divider"></div>
-          	 <a class="dropdown-item" href="#">Something else here</a> 
-          	</div>
-          	-->
+          	 <a class="dropdown-item" href="path.jsp">보자보자모두보자</a>
+             <a class="dropdown-item" href="pathA.jsp">코스A</a>
+             <a class="dropdown-item" href="pathB.jsp">코스B</a>
+             <a class="dropdown-item" href="pathC.jsp">코스C</a>
+             <a class="dropdown-item" href="pathD.jsp">코스D</a>
+             <!--
+             <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a> 
+             </div>
+             -->
          </li>
          
          <li class="nav-item dropdown active">
@@ -60,14 +60,13 @@
              구분 기반 추천
            </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          	<a class="dropdown-item" href="#">국가 지정 문화재</a>
-          	<a class="dropdown-item" href="#">시 지정 문화재</a>
-          	<a class="dropdown-item" href="#">등록 문화재</a>
-          	<!-- 
-          	<div class="dropdown-divider"></div>
-          	<a class="dropdown-item" href="#">Something else here</a>
-          	</div> 
-          	-->
+             <a class="dropdown-item" href="designated.jsp">지정 문화재</a>
+             <a class="dropdown-item" href="registered.jsp">등록 문화재</a>
+             <!-- 
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Something else here</a>
+             </div> 
+             -->
          </li>
          
          

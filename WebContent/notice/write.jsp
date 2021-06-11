@@ -48,7 +48,7 @@
 				  
 				</form>
 				<div class="text-right">
-					<a class="btn btn-secondary" href="list.jsp" 
+					<a class="btn btn-secondary" href="list.jsp?page=<%=cPage %>" 
 					role="button">리스트</a>
 					<a class="btn btn-success" id="saveNotice"
 					role="button">저장</a>
@@ -59,4 +59,11 @@
 		<!-- col end -->
 	</div>
 	<!-- container end -->
+	<script>
+		$(function(){
+			$('#saveNotice').click(function(){
+				noticeForm.submit();
+			});
+		});
+	</script>
 <%@ include file="../inc/footer.jsp" %>
