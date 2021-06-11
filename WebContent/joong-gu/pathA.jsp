@@ -7,13 +7,41 @@
     <meta charset="utf-8">
     <title>중구 문화재 courseA</title>
 	<script src ="../js/jquery-3.6.0.js"></script>
-    
+    <style>
+    	.right{
+    	display : inline;
+	    	float : right;
+	    	width: 40%;
+	    	bakground-color:#eee;
+	    	padding-left : 20px;
+    	}
+    	.left{
+    	display : inline-block;
+    		float: left;
+    		width : 57%;
+    	}
+    	.fakeimg{
+    		background-color: #aaa;
+    		width:100%
+    		padding: 20px;
+    	}
+    	.card{
+    		background-color: white;
+    		width: 100%;
+    		padding: 20px;	
+    	}
+    </style>
 </head>
 <body>
+<div id = "myDIV">
+
+	</div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=16fa6962d25a035624e2ea5cc720f790&libraries=services"></script>
 	<button id="btn" style="margin: 10px 10px 10px 10px;border: 1px solid black;background-color: lightgray;padding: 10px;">코스A</button>
 	<div id="map" style = "width:60%;height:548px;"></div>
-	  
+	
+	
+	<!-- main content 영역 시작 -->
 	<script>
 		// 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
 		var linePath = [
@@ -85,6 +113,15 @@
 			];
 		$(function(){
 			$('#btn').click(function(){
+				
+			<!-- sidebar content 영역 시작 -->
+			var con = document.getElementById("myDIV");
+			
+				con.style.display = 'block';
+			
+				//con.style.display = 'none';
+			
+			<!-- sidebar content 영역 끝 -->
 		
 			var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     		mapOption = {
@@ -94,7 +131,10 @@
 
 			// 지도를 생성합니다    
 			var map = new kakao.maps.Map(mapContainer, mapOption); 
-
+			
+			// 검색 결과 목록이나 마커를 클릭했을 때 장소명을 표출할 인포윈도우를 생성합니다
+			var infowindow = new kakao.maps.InfoWindow({zIndex:1});
+			
 			// 지도에 표시할 선을 생성합니다
 			var polyline = new kakao.maps.Polyline({
 				path: linePath, // 선을 구성하는 좌표배열 입니다
@@ -136,14 +176,15 @@
 
 						// 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
 						//map.setCenter(coords);
-					}
-				});
-			}
+						}
+					});
+				}
 
-	});
-});
+				});
+			});
 
 </script>
+
 </body>
 </html>
 
