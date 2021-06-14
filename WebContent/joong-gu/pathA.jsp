@@ -8,34 +8,12 @@
     <title>중구 문화재 courseA</title>
 	<script src ="../js/jquery-3.6.0.js"></script>
     <style>
-    	.right{
-    	display : inline;
-	    	float : right;
-	    	width: 40%;
-	    	bakground-color:#eee;
-	    	padding-left : 20px;
-    	}
-    	.left{
-    	display : inline-block;
-    		float: left;
-    		width : 57%;
-    	}
-    	.fakeimg{
-    		background-color: #aaa;
-    		width:100%
-    		padding: 20px;
-    	}
-    	.card{
-    		background-color: white;
-    		width: 100%;
-    		padding: 20px;	
-    	}
+    	.map{display : inline; width: 60%}
+    	.list{display : inline-block; width: 38%}
     </style>
 </head>
 <body>
-<div id = "myDIV">
 
-	</div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=16fa6962d25a035624e2ea5cc720f790&libraries=services"></script>
 	<button id="btn" style="margin: 10px 10px 10px 10px;border: 1px solid black;background-color: lightgray;padding: 10px;">코스A</button>
 	<div id="map" style = "width:60%;height:548px;"></div>
@@ -111,15 +89,14 @@
 				}
 
 			];
+		<!--검색목록 시작-->
+		
+		<!--검색목록 끝-->
 		$(function(){
 			$('#btn').click(function(){
 				
 			<!-- sidebar content 영역 시작 -->
-			var con = document.getElementById("myDIV");
-			
-				con.style.display = 'block';
-			
-				//con.style.display = 'none';
+			document.getElementById("list").innerHTML = "자 이게 보이나";
 			
 			<!-- sidebar content 영역 끝 -->
 		
@@ -184,7 +161,7 @@
 			});
 
 </script>
-
+<h3 id = "list"></h3>
 </body>
 </html>
 
