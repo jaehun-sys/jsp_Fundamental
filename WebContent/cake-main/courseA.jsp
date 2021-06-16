@@ -75,6 +75,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="breadcrumb__links">
+                    	<a href="./index.jsp">Home</a>
                         <a href="./course.jsp">All</a>
                         <a href="./courseA.jsp" style="color: red;">courseA</a>
                         <a href="./courseB.jsp">courseB</a>
